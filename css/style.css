@@ -1,0 +1,111 @@
+/* outfit */
+body {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+}
+
+#caculator {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  position: relative;
+}
+
+#display-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #413d3a;
+}
+
+#button-area {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #413d3a;
+}
+
+/* display */
+#left-digits {
+  float: left;
+  width: 80%;
+  height: 100%;
+  font-size: 85px;
+  color: #d6dcdf;
+  text-align: right;
+  line-height: 140px;
+  overflow: hidden;
+}
+
+#right-symbol {
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+
+#function {
+  position: absolute;
+  width: 60%;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+}
+
+#operator {
+  position: absolute;
+  width: 60%;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.content-area {
+  background-color: #d6dcdf;
+  border-radius: 2px;
+  font-size: 30px;
+  color: #413d3a;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  display: none;
+}
+
+/* button */
+#button-area>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#button-area .btn {
+  float: left;
+  width: 126px;
+  height: 82px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #d6dcdf;
+  text-align: center;
+  line-height: 75px;
+  border: 1px solid #656569;
+  cursor: default;
+}
+
+#button-area .fun {
+  font-size: 30px;
+}
+
+#button-area .off {
+  opacity: 0.1;
+}
+
+#button-area .on {
+  color: #20cce3;
+}
