@@ -239,7 +239,6 @@
         value1 = null;
         value2 = null;
         value3 = null;
-        console.log(memCount);
       } // end if
 
       if (memBtn === 'MRC') {
