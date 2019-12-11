@@ -249,7 +249,7 @@
         } else if (memCount === '-') {
           memResult = memNums;
         } // end if-else-if
-        operator = "=";
+        operator = '=';
         displayFuns(dispOpr, operator, 100);
         displayDigit(display, displayResult(memResult), 100);
         memCount = '';
