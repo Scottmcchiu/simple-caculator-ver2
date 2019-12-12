@@ -4,21 +4,29 @@
     /*** power on/ off ***/
     let btns = $('.btn');
 
-    btns.on('mouseenter', function() {
-      if (!$(this).hasClass('off')) {
-        $(this).css({
-          'backgroundColor': '#d6dcdf',
-          'color': '#413d3a'
-        });
-      } // end if
+    btns.on('hover',
+      function() {
+        if (!$(this).hasClass('off')) {
+          $(this).css({
+            'backgroundColor': '#d6dcdf',
+            'color': '#413d3a'
+          });
+        } // end if
 
-      if ($(this).hasClass('on')) {
+        if ($(this).hasClass('on')) {
+          $(this).css({
+            'backgroundColor': '',
+            'color': ''
+          });
+        } // end if
+      }, // end mouseenter
+      function() {
         $(this).css({
           'backgroundColor': '',
           'color': ''
         });
-      } // end if
-    }); // end mouseenter
+      } // end mouseleave
+    ); // end hover
 
     let display = $('#left-digits');
     let dispNum = '';
@@ -48,13 +56,6 @@
           });
       } // end if
     }); // end click
-
-    btns.on('mouseleave', function() {
-      $(this).css({
-        'backgroundColor': '',
-        'color': ''
-      });
-    }); // end mouseleave
     /*** end power ***/
 
 
